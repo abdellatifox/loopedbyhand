@@ -1,0 +1,92 @@
+---
+import TextPage from '../components/TextPage.astro';
+import { SITE } from '../lib/site';
+export const prerender = true;
+---
+
+<TextPage
+  title="Terms of Service"
+  eyebrow="Legal"
+  description={`The terms for using ${SITE.name} and its free crochet patterns.`}
+>
+  <p><strong>Last updated:</strong> September 28, 2026</p>
+  <p>
+    Welcome to {SITE.name}! These terms apply when you use loopedbyhand.com (the “site”). By using the site, you agree
+    to them. If you don’t agree, please don’t use the site.
+  </p>
+
+  <h2>1. Using the site</h2>
+  <p>
+    The site and its patterns are free for personal, non-commercial use. You agree not to misuse the site. For example,
+    you may not try to break into it, overload it, scrape it in bulk, send spam through its forms or use it for anything
+    unlawful.
+  </p>
+
+  <h2>2. Our patterns and content</h2>
+  <p>
+    All patterns, text, photos, illustrations and the site design belong to {SITE.name} and are protected by copyright,
+    unless stated otherwise.
+  </p>
+  <h3>You may:</h3>
+  <ul>
+    <li>make any item from our patterns for yourself, as a gift or for charity;</li>
+    <li>
+      sell finished items you’ve made by hand from our patterns in small quantities (a credit such as “Pattern by
+      {SITE.name}” with a link is always appreciated);
+    </li>
+    <li>print a pattern or save it for your own personal use;</li>
+    <li>share a link to a pattern page, or one photo with a link back to the original page.</li>
+  </ul>
+  <h3>You may not:</h3>
+  <ul>
+    <li>copy, republish, translate or share the written pattern, in whole or in part, on another site, app or group;</li>
+    <li>sell or give away the pattern itself, or include it in a book, course, kit or paid product;</li>
+    <li>use our photos to sell your own items, or claim our patterns or photos as your own;</li>
+    <li>mass-produce items from our patterns in a factory setting.</li>
+  </ul>
+  <p>For any other use, please <a href="/contact">ask us first</a>. We’re usually happy to help.</p>
+
+  <h2>3. Newsletter and messages</h2>
+  <p>
+    When you subscribe or contact us, you confirm that the details you give are your own and accurate. You can
+    unsubscribe at any time. How we handle your information is explained in our
+    <a href="/privacy">Privacy Policy</a>.
+  </p>
+
+  <h2>4. Accuracy of patterns</h2>
+  <p>
+    We test every pattern with care, but mistakes can happen. Results also depend on your yarn, hook, tension and
+    experience. Patterns are provided “as is”, and we can’t guarantee that your finished item will match ours exactly. If
+    you spot an error, please <a href="/contact">let us know</a> so we can fix it.
+  </p>
+
+  <h2>5. Safety</h2>
+  <p>
+    Take extra care with items for babies, young children and pets. Secure all parts firmly, avoid small pieces such as
+    buttons or safety eyes that could come loose, and never leave a baby unsupervised with crocheted items. You are
+    responsible for checking that what you make is safe for its intended use.
+  </p>
+
+  <h2>6. Links to other websites</h2>
+  <p>
+    The site may link to yarn shops, tools or other websites. We don’t control those sites and aren’t responsible for
+    their content, products or policies.
+  </p>
+
+  <h2>7. Disclaimer and limitation of liability</h2>
+  <p>
+    The site is provided “as is” and “as available”, without warranties of any kind. To the fullest extent allowed by
+    law, {SITE.name} is not liable for any indirect or incidental damages, or for the loss of materials, time or money,
+    that result from using the site or its patterns. Nothing in these terms limits any rights you have under consumer
+    laws that cannot be excluded.
+  </p>
+
+  <h2>8. Changes to the site and these terms</h2>
+  <p>
+    We may change, pause or remove any part of the site at any time. We may also update these terms, and when we do,
+    we’ll change the “Last updated” date above. If you keep using the site after a change, you accept the new terms.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about these terms? Reach {SITE.author} through the <a href="/contact">contact page</a>.</p>
+</TextPage>

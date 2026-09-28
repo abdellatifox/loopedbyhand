@@ -1,0 +1,113 @@
+---
+import TextPage from '../components/TextPage.astro';
+import { SITE } from '../lib/site';
+export const prerender = true;
+---
+
+<TextPage
+  title="Privacy Policy"
+  eyebrow="Legal"
+  description={`How ${SITE.name} collects, uses and protects your personal information.`}
+>
+  <p><strong>Last updated:</strong> September 28, 2026</p>
+  <p>
+    {SITE.name} (“we”, “us”, “our”) runs loopedbyhand.com, a free library of crochet patterns. This policy explains
+    what information we collect when you visit the site, why we collect it, and the choices you have. We keep things
+    simple: we collect as little as possible and we never sell your data.
+  </p>
+
+  <h2>Information we collect</h2>
+  <h3>Information you give us</h3>
+  <ul>
+    <li>
+      <strong>Newsletter sign-up:</strong> your email address and the date you subscribed, only if you choose to join
+      the newsletter.
+    </li>
+    <li>
+      <strong>Contact form:</strong> your name, email address and the message you write, only if you send us a message.
+    </li>
+  </ul>
+  <h3>Information collected automatically</h3>
+  <ul>
+    <li>
+      <strong>Hosting data:</strong> the site is hosted on Cloudflare. Like any web host, Cloudflare processes standard
+      technical data (such as your IP address, browser type and the pages requested) to deliver the site and protect it
+      from abuse and attacks.
+    </li>
+    <li>
+      <strong>Fonts:</strong> our typefaces are loaded from Google Fonts, so your browser connects to Google’s servers,
+      which receive your IP address when the page loads.
+    </li>
+  </ul>
+
+  <h2>Cookies and tracking</h2>
+  <p>
+    We do not use advertising cookies, tracking pixels or third-party analytics, and we don’t build profiles about
+    visitors. If we ever add analytics or advertising, we’ll update this policy first and ask for consent where the law
+    requires it.
+  </p>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To send you the newsletter you signed up for, with news about new patterns.</li>
+    <li>To read and reply to messages you send us.</li>
+    <li>To keep the site secure, working properly and free of spam.</li>
+  </ul>
+  <p>
+    Our legal basis is your <strong>consent</strong> (newsletter and contact form) and our <strong>legitimate
+    interest</strong> in running a safe, working website (hosting and security data).
+  </p>
+
+  <h2>Sharing your information</h2>
+  <p>
+    We don’t sell, rent or trade your personal information. We only share it with the service providers that help us
+    run the site. Cloudflare hosts the site and stores our database, and Google Fonts delivers our typefaces. We may
+    also disclose information if the law requires us to.
+  </p>
+
+  <h2>How long we keep it</h2>
+  <ul>
+    <li>Newsletter emails are kept until you unsubscribe.</li>
+    <li>Contact messages are kept only as long as needed to answer you, and are then deleted.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>Depending on where you live (for example under the GDPR or CCPA), you may have the right to:</p>
+  <ul>
+    <li>ask for a copy of the personal information we hold about you;</li>
+    <li>ask us to correct or delete it;</li>
+    <li>withdraw your consent and unsubscribe from the newsletter at any time;</li>
+    <li>object to or restrict how we use your information;</li>
+    <li>complain to your local data-protection authority.</li>
+  </ul>
+  <p>To use any of these rights, just <a href="/contact">send us a message</a>. We’ll reply within 30 days.</p>
+
+  <h2>Security</h2>
+  <p>
+    The site is served over HTTPS, and our database can only be reached by the site itself. No method of storing data
+    online is 100% secure, but we take reasonable steps to protect your information.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    {SITE.name} is not directed at children under 13, and we don’t knowingly collect their personal information. If you
+    believe a child has sent us their details, please <a href="/contact">contact us</a> and we’ll delete them.
+  </p>
+
+  <h2>Links to other sites</h2>
+  <p>
+    Patterns may link to yarn shops or other websites. We’re not responsible for their privacy practices, so please
+    read their policies too.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy from time to time. When we do, we’ll change the “Last updated” date above. Significant
+    changes will be announced on the site or in the newsletter.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about your privacy? Reach {SITE.author} through the <a href="/contact">contact page</a>.
+  </p>
+</TextPage>
