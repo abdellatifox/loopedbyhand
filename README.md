@@ -33,8 +33,8 @@ npm run dev                              # http://localhost:4321
 
 ```bash
 npx wrangler login
-npx wrangler d1 create crochet-db                 # copy database_id into wrangler.jsonc
-npx wrangler kv namespace create CACHE            # copy id into wrangler.jsonc
+npx wrangler d1 create loopedbyhand-db                 # copy database_id into wrangler.jsonc
+npx wrangler kv namespace create loopedbyhand-cache            # copy id into wrangler.jsonc
 npx wrangler secret put ADMIN_TOKEN               # enter a long random token
 npm run db:migrate:remote
 npm run db:seed:remote                            # optional: sample patterns
