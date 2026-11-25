@@ -56,6 +56,9 @@ const ogImage = new URL(image, Astro.site ?? Astro.url).href;
       rel="stylesheet"
     />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+
+    <!-- HB Agency (Prebid header bidding) — loopedbyhand, idSito 45250 -->
+    <script is:inline src="https://d3u598arehftfk.cloudfront.net/prebid_hb_14842_45250.js" async></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
